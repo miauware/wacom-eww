@@ -1,0 +1,6 @@
+# INFO: Trigger script once when Wacom (vendor 056a) connects or disconnects
+# INFO: Uses 'usb' for add and 'hidraw' for remove to avoid multiple calls.
+
+ACTION=="add", SUBSYSTEM=="usb", ENV{ID_VENDOR_ID}=="056a", RUN+="/opt/wacom-eww/scripts/wacom_event_bridge.sh add"
+ACTION=="remove", SUBSYSTEM=="hidraw", ENV{ID_VENDOR_ID}=="056a", RUN+="/opt/wacom-eww/scripts/wacom_event_bridge.sh remove"
+
