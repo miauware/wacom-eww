@@ -10,6 +10,7 @@ To install, run:
 
 ```bash
 git clone --depth 1 https://github.com/miauware/wacom-eww.git
+cd wacom-eww
 chmod +x install.sh
 ./install.sh install 
 ```
