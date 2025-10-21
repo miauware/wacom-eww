@@ -6,11 +6,15 @@ Wacom plugin for eww
 
 Requires aur/wacom-settings-git for the tablet configuration panel, don't forget to install it from paru or yay .
 
+Use the bspwm rices template used in https://github.com/gh0stzk/dotfiles/
+if you are not using it, edit $RICE_DIR in the wacom_event.sh file to the location of your eww folder.
+
+![Screenshot](images/screenrecorder.gif)
+
 To install, run: 
 
 ```bash
 git clone --depth 1 https://github.com/miauware/wacom-eww.git
-cd wacom-eww
 chmod +x install.sh
 ./install.sh install 
 ```
